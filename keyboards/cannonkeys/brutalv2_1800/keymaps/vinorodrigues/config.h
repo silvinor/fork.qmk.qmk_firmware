@@ -23,3 +23,7 @@
 /* wear leveling */
 #define WEAR_LEVELING_LOGICAL_SIZE 4096
 #define WEAR_LEVELING_BACKING_SIZE 8192
+
+/* Num-lock on mac */
+#undef LED_NUM_LOCK_PIN
+#define ALT_LED_NUM_LOCK_PIN GP2
