@@ -20,8 +20,8 @@
         "vid": "0xFFFE"
     },
     "indicators": {
-        "caps_lock": "A15",
-        "num_lock": "C10",
+        "num_lock": "A15",
+        "caps_lock": "C10",
         "scroll_lock": "C11"
     },
     "matrix_pins": {
@@ -43,23 +43,25 @@
         "max_brightness": 200,
         "val_steps": 20,
         "animations": {
+            "solid_color": true,
             "breathing": true,
             "cycle_all": true,
             "cycle_left_right": true,
+            "cycle_up_down": true,
+            "rainbow_moving_chevron": true,
             "cycle_out_in": true,
             "cycle_out_in_dual": true,
             "cycle_pinwheel": true,
             "cycle_spiral": true,
-            "cycle_up_down": true,
             "dual_beacon": true,
-            "multisplash": true,
             "rainbow_beacon": true,
-            "rainbow_moving_chevron": true,
             "raindrops": true,
+            "typing_heatmap": true,
+            "solid_reactive_simple": true,
             "solid_reactive": true,
             "solid_reactive_cross": true,
-            "solid_reactive_simple": true,
-            "typing_heatmap": true
+            "multisplash": true
+
         },
         "layout": [
             {"matrix": [0, 0], "x": 0, "y": 0, "flags": 1},
