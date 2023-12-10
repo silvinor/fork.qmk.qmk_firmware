@@ -18,6 +18,8 @@
 
 #ifdef RGB_MATRIX_ENABLE
 
+// clang-format off
+
 const snled27351_led_t PROGMEM g_snled27351_leds[SNLED27351_LED_COUNT] = {
 /* Refer to SNLED27351 manual for these locations
  *   driver
@@ -130,4 +132,6 @@ const snled27351_led_t PROGMEM g_snled27351_leds[SNLED27351_LED_COUNT] = {
     {1, J_6,  K_6,  L_6},
 };
 
-#endif  // RGB_MATRIX_ENABLE
+// clang-format on
+
+#endif // RGB_MATRIX_ENABLE

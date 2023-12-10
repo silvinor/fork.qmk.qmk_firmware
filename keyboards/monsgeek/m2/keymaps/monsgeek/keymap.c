@@ -16,8 +16,6 @@
 
 #include QMK_KEYBOARD_H
 
-// clang-format off
-
 enum __via_custom_values {
     id_features_win_lock  = 1,
     id_features_mac_mode  = 2,
@@ -41,6 +39,8 @@ enum __layers {
 #define MG_M_FN MO(MAC_FN)
 #define MG_WASD TG(WIN_WASD)
 #define MG_MASD TG(MAC_WASD)
+
+// clang-format off
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -102,13 +102,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 // clang-format on
 
-void led_init_ports(void){
+void led_init_ports(void) {
     // Set our LED pings as output
-    setPinOutput(LED_NUM_LOCK_PIN);  // LED1 Num Lock
+    setPinOutput(LED_NUM_LOCK_PIN); // LED1 Num Lock
     writePinLow(LED_NUM_LOCK_PIN);
-    setPinOutput(LED_CAPS_LOCK_PIN);  // LED2 Caps Lock
+    setPinOutput(LED_CAPS_LOCK_PIN); // LED2 Caps Lock
     writePinLow(LED_CAPS_LOCK_PIN);
-    setPinOutput(LED_WIN_LOCK_PIN);  // LED3 Win Lock
+    setPinOutput(LED_WIN_LOCK_PIN); // LED3 Win Lock
     writePinLow(LED_WIN_LOCK_PIN);
 }
 
@@ -121,7 +121,6 @@ bool led_update_user(led_t led_state) {
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
-
         case DF(WIN_BASE):
             if (record->event.pressed) {
                 set_single_persistent_default_layer(WIN_BASE);
