@@ -1,11 +1,12 @@
 # MonsGeek M2
-[![M2](https://s21.ax1x.com/2024/03/23/pFhDAqH.md.png)](https://imgse.com/i/pFhDAqH)
+
+![Monsgeek M2](https://dummyimage.com/640x480/FFF/069.jpg&text=Monsgeek+M2)
 
 A customizable 95% keyboard
 
-* Keyboard Maintainer: [jonylee@hfd](https://github.com/jonylee1986)
+* Keyboard Maintainer: ~~[jonylee@hfd](https://github.com/jonylee1986)~~
 * Hardware Supported: MonsGeek M2 PCB
-* Hardware Availability: [monsgeek](https://www.monsgeek.com/)
+* Hardware Availability: [monsgeek](https://www.monsgeek.com/product/m2/)
 
 Make example for this keyboard (after setting up your build environment):
 
