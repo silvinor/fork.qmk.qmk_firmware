@@ -29,7 +29,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // clang-format off
 
 /* HID report IDs */
-enum hid_report_ids { 
+enum hid_report_ids {
     REPORT_ID_ALL = 0,
     REPORT_ID_KEYBOARD = 1,
     REPORT_ID_MOUSE,
@@ -357,6 +357,11 @@ void clear_keys_from_report(void);
 
 #ifdef MOUSE_ENABLE
 bool has_mouse_report_changed(report_mouse_t* new_report, report_mouse_t* old_report);
+#endif
+
+#ifndef NKRO_ENABLE
+void add_apple_fn(report_keyboard_t* keyboard_report);
+void del_apple_fn(report_keyboard_t* keyboard_report);
 #endif
 
 #ifdef __cplusplus
